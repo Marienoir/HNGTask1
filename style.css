@@ -5,6 +5,7 @@
 }
 body{
     font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
 }
 .container{
     width: 100%;
@@ -19,20 +20,14 @@ nav img {
     width: 100px;
     height: 100px;
 }
-nav a {
-    padding: 5px;
-}
-nav a:hover {
-    color: #0146B9;
-    background-color: white;
-    border-radius: 2px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
 header{
     color: rgb(243, 239, 239);
     background: grey;
-    height: 90vh;
+    background-image: url("assets/i4g.png");
+    background-color: rgb(34, 47, 70);
+    background-blend-mode:multiply ;
+    background-position: center;
+    background-size: cover;
 }
 .about-me {
     margin-top: 90px;
@@ -40,7 +35,8 @@ header{
     padding: 35px;
 }
 .about-me h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 .about-me p{
     font-size: 1.7rem;
@@ -102,29 +98,32 @@ summary {
 }
 details[open] summary ~ * {
     animation: sweep .7s ease-in-out;
-  }
+}
 @keyframes sweep {
     0%    {opacity: 0; margin-top: -10px}
     100%  {opacity: 1; margin-top: 0px}
-  }
+}
 details > summary::before {
     position: absolute;
     content: "+";
     left: 1px;
     color: #EF5DA8;
-  }
+}
 details[open] > summary::before {
     position: absolute;
     content: "-";
     left: 1px;
     color: #EF5DA8;
-  }
+}
 details > summary{
     list-style: none;
 }
 details > summary::-webkit-details-marker {
     display: none;
-  }
+}
+.resume_content ul li{
+    list-style-type: none;
+}
 footer{
     background: #0146B9;
     color: rgb(235, 227, 227);
@@ -137,6 +136,7 @@ footer{
 footer span{
     color: #EF5DA8;
 }
+/* MEDIA QUERIES */
 @media only screen and (max-width:768px){
     body{
         font-size: 9px;
