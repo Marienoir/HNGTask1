@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.2rem;
+}
+.container{
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+nav img {
+    width: 100px;
+    height: 100px;
+}
+nav a {
+    padding: 5px;
+}
+nav a:hover {
+    color: #0146B9;
+    background-color: white;
+    border-radius: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+header{
+    color: rgb(243, 239, 239);
+    background: grey;
+    height: 90vh;
+}
+.about-me {
+    margin-top: 90px;
+    line-height: 2rem;
+    padding: 35px;
+}
+.about-me h1{
+    font-size: 3rem;
+}
+.about-me p{
+    font-size: 1.7rem;
+    margin-top: 10px;
+}
+.about-me button{
+    padding: 15px;
+    color: whitesmoke;
+    background-color: #0146B9;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.about-me button a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+main{
+    padding: 50px;
+}
+h2{
+    background: rgb(153, 152, 152);
+    padding: 20px;
+    color: white;
+    letter-spacing: 2px;
+}
+p{
+    line-height: 35px;
+    text-align: justify;
+}
+ul li{
+    padding-bottom: 20px;
+}
+span{
+    font-weight: bold;
+    font-size: 20px;
+}
+summary {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    background-color: #fff;
+    color: #012551;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 2px solid #D1CCCC;
+}
+details[open] summary ~ * {
+    animation: sweep .7s ease-in-out;
+  }
+@keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+details > summary::before {
+    position: absolute;
+    content: "+";
+    left: 1px;
+    color: #EF5DA8;
+  }
+details[open] > summary::before {
+    position: absolute;
+    content: "-";
+    left: 1px;
+    color: #EF5DA8;
+  }
+details > summary{
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+  }
+footer{
+    background: #0146B9;
+    color: rgb(235, 227, 227);
+    font-size: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer span{
+    color: #EF5DA8;
+}
+@media only screen and (max-width:768px){
+    body{
+        font-size: 9px;
+    }
+    .about-me {
+        padding: 20px;
+    }
+    .about-me h1{
+        font-size: 1.5rem;
+    }
+    .contact-details {
+        margin: 0 -15px;
+    }
+    main{
+        padding: 10px;
+    }
+    span{
+        font-size: 15px;
+    }
+    .resume_content p, ul li{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    p{
+        line-height: 20px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+}
