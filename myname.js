@@ -1,1 +1,0 @@
-document.write("Mary Okosun")
