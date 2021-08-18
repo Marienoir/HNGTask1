@@ -158,6 +158,7 @@ footer span{
     }
     .resume_content p, ul li{
         font-size: 18px;
+        line-height: 35px;
         margin-top: 10px;
     }
     p{
